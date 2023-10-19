@@ -10,7 +10,7 @@
       const handleFromBack = () => {
         console.log("我是返回回来的2222====");
       };
-      window.addEventListener("popstate", handleFromBack, false);
+      (() => window.addEventListener("popstate", handleFromBack, false))();
       const onClick = () => {
         window.location.href =
           "https://f-p-sandbox.bytedance.net/credit/v1/application/pre_credit_application_result?order_id=20230921101100300000000030411001&creditStatus=4&applyInfoPath=1";
