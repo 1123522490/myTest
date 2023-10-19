@@ -7,6 +7,10 @@
   </head>
   <body>
     <script>
+      const handleFromBack = () => {
+        console.log("我是返回回来的====");
+      };
+      window.addEventListener("popstate", handleFromBack, false);
       const onClick = () => {
         window.location.href = "b.html";
       };
