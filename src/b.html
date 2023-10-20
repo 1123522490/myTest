@@ -21,8 +21,12 @@
           console.log("执行");
         }, 0);
       };
+      const onBack = () => {
+        history.go(-1);
+      };
     </script>
     <div>我是 b</div>
+    <button onclick="onBack()"></button>
     <button onclick="onClick()">点击跳转</button>
   </body>
 </html>
