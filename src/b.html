@@ -12,10 +12,10 @@
       const handleFromBack = () => {
         console.error("我是返回回来的2222====");
       };
-      (() => {
+      const onListen = () => {
         console.log("监听");
         window.addEventListener("popstate", handleFromBack, false);
-      })();
+      };
       const onClick = () => {
         window.location.href =
           "https://f-p-sandbox.bytedance.net/credit/v1/application/pre_credit_application_result?order_id=20230921101100300000000030411001&creditStatus=4&applyInfoPath=1";
@@ -30,6 +30,7 @@
       };
     </script>
     <div>我是 b</div>
+    <button onclick="onListen()">开始监听</button>
     <button onclick="onBack()">点击回退</button>
     <button onclick="onClick()">点击跳转</button>
   </body>
