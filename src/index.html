@@ -9,7 +9,7 @@
     <script>
       history.pushState("", "", "#");
       const handleFromBack = () => {
-        console.log("我是返回回来的1111====");
+        console.error("我是返回回来的1111====");
       };
       window.addEventListener("popstate", handleFromBack, false);
       const onClick = () => {
