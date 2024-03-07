@@ -12,9 +12,8 @@
       };
       window.addEventListener("popstate", handleFromBack, false);
       const onClick = () => {
-        window.location.replace(
-          "https://p-boei18n.byted.org/obj/gecko-internal-sg/pipo/fe/pipo_bnpl/bnpl/static/credit-approval/middle-page.boe_bnpl_ph.html?idc=boe&institution=WEFUND&page_code=PRE_CREDIT_MIDDLE_PAGE&next_page_code=KYC_INFO_COLLECT"
-        );
+        window.location.href = "https://p-boei18n.byted.org/obj/gecko-internal-sg/pipo/fe/pipo_bnpl/bnpl/static/credit-approval/personal-info.boe_bnpl_ph.html?idc=boe&previous_page_id=bnpl_activate_step_progress&priority_region=ID&source=bnpl_activate_step_progress"
+        ;
       };
       const onClick2 = () => {
         window.location.replace(
@@ -23,7 +22,7 @@
       };
     </script>
     <div>我是 index</div>
-    <button onclick="onClick()">点击跳转，后晒新客</button>
+    <button onclick="onClick()">点击跳转，结果页</button>
     <button onclick="onClick2()">点击跳转，后晒老客</button>
   </body>
 </html>
