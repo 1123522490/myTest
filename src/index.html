@@ -20,9 +20,16 @@
           "https://p-boei18n.byted.org/obj/gecko-internal-sg/pipo/fe/pipo_bnpl/bnpl/static/credit-approval/middle-page.boe_bnpl_ph.html?idc=boe&institution=WEFUND&page_code=PRE_CREDIT_MIDDLE_PAGE&next_page_code=PERSONAL_INFO_COLLECT"
         );
       };
+      const onSchema = () => {
+        const a =
+          'https://f-p-sandbox.bytedance.net/credit/v1/application/pre_credit_application_result?order_id=20230921101100300000000030411001&creditStatus?=4&applyInfoPath=2';
+        window.location.href = a
+      }
     </script>
     <div>我是 index</div>
     <button onclick="onClick()">点击跳转，结果页</button>
     <button onclick="onClick2()">点击跳转，后晒老客</button>
+    <button onclick="onSchema()">点击跳客户端</button>
+
   </body>
 </html>
