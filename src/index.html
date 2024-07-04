@@ -7,6 +7,7 @@
   </head>
   <body>
     <script>
+      document.addEventListener("paste",(e)=>{"触发了粘贴",e.clipboardData.getData("text")})
       const handleFromBack = () => {
         console.error("我是返回回来的1111====");
       };
@@ -27,6 +28,7 @@
       }
     </script>
     <div>我是 index</div>
+    <input title="测试" />
     <button onclick="onClick()">点击跳转，结果页</button>
     <button onclick="onClick2()">点击跳转，后晒老客</button>
     <button onclick="onSchema()">点击跳客户端</button>
