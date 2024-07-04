@@ -7,7 +7,7 @@
   </head>
   <body>
     <script>
-      document.addEventListener("paste",(e)=>{"触发了粘贴",e.clipboardData.getData("text")})
+      document.addEventListener("paste",(e)=>{console.log("触发了粘贴",e.clipboardData.getData("text"))})
       const handleFromBack = () => {
         console.error("我是返回回来的1111====");
       };
