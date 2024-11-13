@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+        content="script-src 'self' 'unsafe-inline' 'unsafe-eval' chrome-extension://f1fd9cd4-7f9e-413c-ae77-594d9419eb3b;">
+    <!-- <meta http-equiv="Content-Security-Policy"
+        content="script-src 'self' chrome-extension://f1fd9cd4-7f9e-413c-ae77-594d9419eb3b 'unsafe-eval' 'inline-speculation-rules';"> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.6/pdfobject.min.js"></script>
+    <script>
+        PDFObject.embed("http://storage.googleapis.com/staging-agreement/signed/2024-10-23/f7044730-b2ca-4797-842e-ba3d73c90f2a.pdf?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=s-cicil-avalon-bucket%40ptmab-staging.iam.gserviceaccount.com%2F20241030%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20241030T101415Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=6f08e72e1278f5d783bb1ddcac2bd97fa93a97baa118095eb9e7621d28d4a22336a0e9f774ed97357f1e6aa8089a99b20161b4d1f09bee8a43ccb2a8d2199d1e18491d2832d7a1c8c0ec636ab1c17a034cdac89830b473e7dd96a9760a08334504cad1d9abcd2870308e972a52a2f22e7b02822e7000d8f568b0aeccd50b7f435035f0dee78b941cf95c314db6a8809202351ce6b9983963f039abbd640c50bcf9ca298ab25d1a1b1c867e5b15ea64129c0bfd9b673eb980bd686c315a094612c1d9d4cd1179029924c39746dc0e156e32d387ade7bafdffac37de0f3515759b04f3588e23dfd56e3494072f9deea48e6e0f38889bc00ba47cdc5a90f547b38f", "#pdf-viewer");
+    </script>
+</body>
+
+</html>

@@ -7,18 +7,21 @@
   </head>
   <body>
     <script>
-      navigator.clipboard
-      document.addEventListener("paste",(e)=>{
-        console.log("触发了粘贴",e.clipboardData.getData("text"),
-        alert("触发了粘贴"))
-      })
+      navigator.clipboard;
+      document.addEventListener("paste", (e) => {
+        console.log(
+          "触发了粘贴",
+          e.clipboardData.getData("text"),
+          alert("触发了粘贴")
+        );
+      });
       const handleFromBack = () => {
         console.error("我是返回回来的1111====");
       };
       window.addEventListener("popstate", handleFromBack, false);
       const onClick = () => {
-        window.location.href = "https://p-boei18n.byted.org/obj/gecko-internal-sg/pipo/fe/pipo_bnpl/bnpl/static/credit-approval/credit-result.boe_bnpl_id_gopay_v2.html?idc=boe&previous_page_id=bnpl_activate_step_progress&priority_region=ID&source=bnpl_activate_step_progress"
-        ;
+        window.location.href =
+          "https://p-boei18n.byted.org/obj/gecko-internal-sg/pipo/fe/pipo_bnpl/bnpl/static/credit-approval/credit-result.boe_bnpl_id_gopay_v2.html?idc=boe&previous_page_id=bnpl_activate_step_progress&priority_region=ID&source=bnpl_activate_step_progress";
       };
       const onClick2 = () => {
         window.location.replace(
@@ -26,16 +29,19 @@
         );
       };
       const onSchema = () => {
-        const a = "https://p-boei18n.byted.org/obj/gecko-internal-sg/pipo/fe/pipo_bnpl/bnpl/static/credit-approval/credit-result.boe_credit_recovery.html?data=%7B%22status%22%3A%22PROCESSING%22%2C%22order_id%22%3A%2220240711101100300000000097710000%22%2C%22step_code%22%3A%22APPLICATION_RESULT_WAIT%22%2C%22next_apply_time%22%3Anull%2C%22status_code%22%3A%22%22%2C%22customer_url%22%3A%22https%3A%2F%2Fp-boei18n.byted.org%2Fobj%2Fgecko-internal-sg%2Fpipo%2Ffe%2Fpipo_bnpl%2Fbnpl%2Fstatic%2Fcustomer-service%2Findex.html%3Fentrance%3Dbnpl_activation%5Cu0026idc%3Dboe%5Cu0026source%3Dbnpl_activate_result%23%2Ffaq%22%2C%22step_code_url%22%3Anull%2C%22format_amount%22%3Anull%2C%22repayment_time%22%3Anull%2C%22amount%22%3Anull%2C%22currency%22%3Anull%2C%22BaseResp%22%3Anull%7D&idc=boe&institution=GOPAYLATER&order_id=20240711101100300000000097710000&page_code=CREDIT_APPLICATION_RESULT_PAGE&user_type_identification=&source=www&priority_region=ID&previous_page_id=www&order_id=20240711101100300000000097710000&institution=GOPAYLATER#/credit-recovery?previous_page_id=bnpl_activate_result"
-        window.location.href = a
-      }
+        const a =
+          "https://p-boei18n.byted.org/obj/gecko-internal-sg/pipo/fe/pipo_bnpl/bnpl/static/credit-approval/credit-result.boe_credit_recovery.html?data=%7B%22status%22%3A%22PROCESSING%22%2C%22order_id%22%3A%2220240711101100300000000097710000%22%2C%22step_code%22%3A%22APPLICATION_RESULT_WAIT%22%2C%22next_apply_time%22%3Anull%2C%22status_code%22%3A%22%22%2C%22customer_url%22%3A%22https%3A%2F%2Fp-boei18n.byted.org%2Fobj%2Fgecko-internal-sg%2Fpipo%2Ffe%2Fpipo_bnpl%2Fbnpl%2Fstatic%2Fcustomer-service%2Findex.html%3Fentrance%3Dbnpl_activation%5Cu0026idc%3Dboe%5Cu0026source%3Dbnpl_activate_result%23%2Ffaq%22%2C%22step_code_url%22%3Anull%2C%22format_amount%22%3Anull%2C%22repayment_time%22%3Anull%2C%22amount%22%3Anull%2C%22currency%22%3Anull%2C%22BaseResp%22%3Anull%7D&idc=boe&institution=GOPAYLATER&order_id=20240711101100300000000097710000&page_code=CREDIT_APPLICATION_RESULT_PAGE&user_type_identification=&source=www&priority_region=ID&previous_page_id=www&order_id=20240711101100300000000097710000&institution=GOPAYLATER#/credit-recovery?previous_page_id=bnpl_activate_result";
+        window.location.href = a;
+      };
+      const onClick3 = () => {
+        window.location.href = "./web/viewer.html?file=test2.pdf";
+      };
     </script>
     <div>我是 index</div>
     <input title="测试" />
     <button onclick="onClick()">点击跳转，结果页</button>
     <button onclick="onClick2()">点击跳转，后晒老客</button>
     <button onclick="onSchema()">点击跳结果页</button>
-
-
+    <button onclick="onClick3()">点击跳 pdf</button>
   </body>
 </html>
